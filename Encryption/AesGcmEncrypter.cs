@@ -35,7 +35,7 @@ public class AesGcmEncrypter : IEncrypter
         }
         catch (Exception e)
         {
-            throw new Exception("Failed to encrypt message", e);
+            throw new Exception("Failed to encrypt message");
         }
     }
 
@@ -57,7 +57,7 @@ public class AesGcmEncrypter : IEncrypter
         }
         catch (Exception e)
         {
-            throw new Exception("Failed to decrypt message", e);
+            throw new Exception("Failed to decrypt message");
         }
     }
 }
