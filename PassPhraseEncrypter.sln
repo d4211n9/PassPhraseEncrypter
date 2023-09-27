@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager", "FileManager\FileManager.csproj", "{00E3D8D1-F170-498D-A2AA-8CC27B597A14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectJsonConverter", "ObjectJsonConverter\ObjectJsonConverter.csproj", "{7B43A065-4BE3-4982-93F4-BD72C20586B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{00E3D8D1-F170-498D-A2AA-8CC27B597A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E3D8D1-F170-498D-A2AA-8CC27B597A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E3D8D1-F170-498D-A2AA-8CC27B597A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
