@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager", "FileManager\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectJsonConverter", "ObjectJsonConverter\ObjectJsonConverter.csproj", "{7B43A065-4BE3-4982-93F4-BD72C20586B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend\Frontend.csproj", "{803E43BA-37D4-4BA4-8AC5-9A6279D9086F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B43A065-4BE3-4982-93F4-BD72C20586B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803E43BA-37D4-4BA4-8AC5-9A6279D9086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803E43BA-37D4-4BA4-8AC5-9A6279D9086F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803E43BA-37D4-4BA4-8AC5-9A6279D9086F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803E43BA-37D4-4BA4-8AC5-9A6279D9086F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,6 @@ namespace Encryption;
 public class AesGcmEncrypter : IEncrypter
 {
     private static readonly int KeySize = 32;
-    private static readonly Encoding Encoding = Encoding.UTF8;
     
     public EncryptedMessageWithKey Encrypt(string message)
     {
@@ -15,7 +14,7 @@ public class AesGcmEncrypter : IEncrypter
         RandomNumberGenerator.Fill(key);
         byte[] nonce = new byte[AesGcm.NonceByteSizes.MaxSize];
         RandomNumberGenerator.Fill(nonce);
-        byte[] plainTextBytes = Encoding.GetBytes(message);
+        byte[] plainTextBytes = Encoding.UTF8.GetBytes(message);
         byte[] cipherText = new byte[plainTextBytes.Length];
         byte[] tag = new byte[AesGcm.TagByteSizes.MaxSize];
 
@@ -53,11 +52,21 @@ public class AesGcmEncrypter : IEncrypter
                 encryptedMessageWithKey.Tag,
                 plaintextBytes);
 
-            return Encoding.GetString(plaintextBytes);
+            return Encoding.UTF8.GetString(plaintextBytes);
         }
         catch (Exception e)
         {
             throw new Exception("Failed to decrypt message");
         }
+    }
+
+    public static string KeyToPassPhrase(byte[] key)
+    {
+        return Convert.ToHexString(key);
+    }
+
+    public static byte[] PassPhraseToKey(string passPhrase)
+    {
+        return Convert.FromHexString(passPhrase);
     }
 }

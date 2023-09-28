@@ -12,7 +12,7 @@ public class BasicFileManager : IFileManager
     {
         try
         {
-            filePath = filePath.Replace("\\", "\\\\");
+            filePath = filePath.Replace("\\", "/");
             
             using StreamWriter outputFile = File.AppendText(filePath);
         
